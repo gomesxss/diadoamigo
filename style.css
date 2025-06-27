@@ -1,0 +1,535 @@
+*{
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+body{
+    background-color: #050a10;
+    display: flex;
+}
+.sidebar-left {
+  position: fixed; /* fixa no canto da tela */
+  top: 0;
+  left: 0;
+  width: 204px; /* largura fixa */
+  height: 100vh; /* ocupa toda a altura da tela */
+  padding: 20px;
+  border-right: 1px solid #ffffff; /* linha separadora à direita */
+}
+
+.logo-sidebar {
+  width: 150px; /* largura do logo */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; /* centraliza horizontalmente */
+}
+
+.sidebar-left h1 {
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+/* Perfil exibido na sidebar esquerda */
+.perfil-principal {
+  display: flex; /* deixa o conteúdo lado a lado */
+  align-items: center; /* alinha verticalmente */
+  gap: 10px; /* espaço entre os itens */
+  padding: 15px 0;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Foto do perfil */
+.perfil-principal img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* deixa a imagem redonda */
+  object-fit: cover; /* imagem cobre a área sem distorcer */
+}
+
+/* Informações do perfil */
+.perfil-principal .info {
+  flex: 1; /* ocupa o espaço disponível */
+}
+
+.perfil-principal .nome {
+  font-weight: bold;
+  font-size: 16px;
+  color: #eee;
+}
+
+.perfil-principal .arroba {
+  font-size: 15px;
+  color: #656565;
+}
+
+.perfil-principal .mais {
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer; /* vira uma "mãozinha" ao passar o mouse */
+}
+
+/* Links de navegação na sidebar esquerda */
+.sidebar-left nav a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none; /* sem sublinhado */
+  margin: 28px 0; /* espaçamento entre links */
+  font-size: 24px;
+}
+
+/* -------- SIDEBAR DIREITA -------- */
+.sidebar-right {
+  position: fixed; /* fixa no canto direito */
+  top: 0;
+  right: 0;
+  width: 204px;
+  height: 100vh;
+  padding: 20px;
+  border-left: 1px solid #ffffff; /* linha separadora à esquerda */
+}
+
+.sidebar-right h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.sidebar-right .item-noticia {
+  margin-top: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ffffff;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 15px; /* espaçamento extra entre as notícias */
+}
+
+/* Cada item da sidebar direita */
+.sidebar-right .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ffffff;
+  font-size: 15px;
+  color: #ccc;
+}
+
+.primeiro-item {
+  border-top: 1px solid #ffffff;
+  padding-top: 10px; /* ajuste o espaço se quiser */
+}
+
+
+/* Mesmo estilo para a classe .item (provavelmente para outras listas) */
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+  font-size: 15px;
+  color: #ccc;
+}
+
+/* Imagem de cada item */
+.item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Info de cada item */
+.item .info {
+  flex: 1;
+}
+
+.item .nome {
+  font-weight: bold;
+  font-size: 14px;
+  color: #eee;
+}
+
+.item .arroba {
+  font-size: 14px;
+  color: #888;
+}
+
+.item .mais {
+  font-size: 18px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+/* Bloco de notícias na sidebar direita */
+.noticias {
+  margin-top: 10px;
+}
+
+.item-noticia {
+  padding: 8px 0;
+  border-bottom: 1px solid #ffffff;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+.part1{
+    width: 150px;
+    background-color: #050a10;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: aliceblue 1px solid;
+    
+
+}
+.main{
+     margin-left: 150px;
+  width: calc(100% - 150px);
+  display: flex;
+  flex-direction: column;
+ 
+}
+.logo{
+    width: 100px;
+
+
+}
+.my{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.ester {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.by{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.part1 ul{
+    list-style: none;
+
+}
+
+.part1 ul li{
+    margin: 12px;
+}
+
+.part1 ul li a{
+    text-decoration: none;
+    color: #ccc;
+    ;
+}
+ .part1 ul li a:hover{
+    color: aquamarine;
+ }
+
+ .sair{
+    margin-top: 145px ;
+    padding: 5px;
+    width: 80%;
+    background-color: #333;
+    color: white;
+    border: 0.5px ;
+    transition: all 0.3s;
+    cursor: pointer;
+ }
+
+ .sair:hover{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+   }
+ .img1{
+     width: 30px;
+  height: 30px;
+  border-radius: 50%;
+ 
+
+
+ }
+
+ .perfil{
+   display: flex;         
+      
+  gap: 5px;                
+  margin-bottom: 30px;
+  transition: 1s;
+  
+  
+ }
+ .perfil:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+ }
+ .text1{
+    display: flex;
+  flex-direction: column; 
+  line-height: 1.2;
+ }
+ 
+ .topbar {
+   
+  height: 50px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border-bottom: 1.5px solid white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  
+
+  
+}
+
+.topbar-left img,
+.topbar-right img {
+  cursor: pointer;
+  
+}
+
+.topbar-center {
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.topbar-right img {
+  margin-left: 15px;
+}
+
+.topbar span{
+    font-size: 20px;
+    
+}
+  
+.bio{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-left: 50px;
+   
+}
+.img2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: px;
+    
+}
+
+.dados{
+    flex: 1;
+}
+.numeros {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+
+.numeros div {
+  text-align: center;
+  font-size: 15px;
+}
+
+.nome {
+  font-size: 16px;
+  
+  margin-bottom: 15px;
+}
+
+.seguido {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 12px;
+  color: #ccc;
+  inline-size: none;
+ object-fit: cover;
+}
+
+.seguido img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+}
+
+
+
+
+  
+   .destaques {
+  display: flex;
+  gap: 30%;
+  margin-top: 15%;
+  margin-left: 15%;
+  position: absolute;
+}
+.destaque img{
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      border: solid 2px white;
+      transition: all 1.5;   }
+
+      .destaque img:hover{
+        transform: scale(1.5s);
+        box-shadow: 0 0 10 whitesmoke;
+      }
+
+    .destaque span{
+      margin-left: 20%;
+      justify-content: space-between;
+      gap: 1px;
+           
+    }
+    .span1{
+      margin-left: 50px;
+    }
+    .posts{
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+margin-top:15% ;
+margin-left: 35%;
+position: absolute;
+}
+.seguido img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+ 
+}
+.video{
+    width: 50%;
+    max-width: 500px;
+  border-radius: 5px;
+  display: block;
+  margin:  auto;
+  
+  margin-top: 25%;
+  
+}
+.coração{
+    height: 20px;
+    
+}
+.compartilhar{
+    height: 20px;
+    justify-content: space-around;
+    
+}
+.favs{
+    height: 20px;
+    margin-left: 50px;
+}
+.comentario{
+    height: 30px;
+}
+
+
+
+.curtido,
+.legenda {
+  display: flex;
+  font-size: 14px;
+  margin: 2px 0;
+  justify-content: space-between;
+ margin-right: 10px;
+  
+  
+}
+.curtido{
+    margin-bottom: 15px;
+   
+    
+}
+
+.interacoes {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+
+
+}
+
+
+.gi{width: 25px;
+  height: 25px;
+  margin-right: 45px;
+  border-radius: 50%;
+  position: absolute;
+
+
+  
+}
+
+  .foto{
+    height: 500px;
+    margin-top: 70px;
+     border-radius: 5px;
+  display: flex;
+  margin:  20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+
+  }
+  
+  .coração:hover{
+   transform: scale(1.1); 
+  }
+  .comentario:hover{
+     transform: scale(1.1); 
+
+  }
+  .favs:hover{
+     transform: scale(1.1); 
+ 
+  }
+  .compartilhar:hover{
+     transform: scale(1.1); 
+ 
+  }
+
+    
+  .postamigo img{
+    width: 65%;
+    height: 90%;
+    border-radius: 2%;
+    margin: auto;
+    margin-left: 200px;
+    margin-top: 20px;
+    border: solid 1px white;
+    transform: scale(1.1);
+    
+  }
+ .postamigo img:hover{
+  transform: scale(1.1);
+ }
